@@ -32,6 +32,12 @@ adventureAwaits.addEventListener('click', function (e) {
     e.target.style.opacity = 0.7;
 });
 
+// changes opacity when dragged
+const busImage = document.querySelector('.intro img');
+busImage.addEventListener("drag", function(event) {
+  return  event.target.style.opacity = 0.5;
+}, false);
+
 // changes color when mouse moves over
 destinationTitle = document.querySelectorAll('.destination h4')
 destinationTitle.forEach(attr => {
